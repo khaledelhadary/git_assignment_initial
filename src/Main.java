@@ -11,7 +11,7 @@ public class Main {
 			new Fibonacci(),
 			new LucasSeries(), 
 			new CircleVolume(),
-                        new multiplicationseries(),
+            new multiplicationseries(),
 
 	};
 
@@ -29,7 +29,8 @@ public class Main {
 				+"7-Fibonacci\n"
 				+"8-Lucas Series\n"
 				+"9-Circle Volume\n"
-				+"10-All the Previous\n"
+				+"10-multiplicationseries\n"
+				+"11-All the Previous\n"
 				+"-----------------------------");
 		System.out.print("Please Enter your Choice: ");
 		Scanner sc = new Scanner(System.in);
@@ -38,7 +39,7 @@ public class Main {
 		System.out.print("Please Enter your Input: ");
 		String input = sc.next();
 		System.out.println("-----------------------------");
-		if(choice.equals("10"))
+		if(choice.equals("11"))
 			mathTopic.dispatchEvent(input);
 		else
 			subscribers[Integer.parseInt(choice) - 1].notifySubscriber(input);;
